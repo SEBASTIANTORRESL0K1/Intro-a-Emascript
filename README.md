@@ -1,38 +1,37 @@
-# Descripción del Proyecto
+# Agencia de Viajes - Registro de Viajes
 
-Este proyecto utiliza archivos HTML y JavaScript para construir una aplicación web interactiva. A continuación, se describe el propósito de cada tipo de archivo:
+Este proyecto es una aplicación web para registrar y gestionar itinerarios de viajes. Permite a los usuarios registrar destinos, seleccionar métodos de transporte, y visualizar un itinerario con los detalles de cada viaje.
 
-## Archivos HTML
-Los archivos HTML son responsables de la estructura y el contenido básico de la aplicación. Definen los elementos visuales como encabezados, párrafos, botones y formularios. Además, sirven como punto de entrada para enlazar los archivos JavaScript y CSS.
+## Archivos principales
 
-### Ejemplo de un archivo HTML
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Mi Proyecto</title>
-    <script src="script.js"></script>
-</head>
-<body>
-    <h1>Bienvenido a mi aplicación</h1>
-    <button id="miBoton">Haz clic aquí</button>
-</body>
-</html>
-```
+### `index.html`
+- Contiene la estructura básica de la página web.
+- Incluye un formulario para registrar nuevos viajes y una sección para mostrar el itinerario.
 
-## Archivos JavaScript
-Los archivos JavaScript contienen la lógica y funcionalidad de la aplicación. Se encargan de manejar eventos, realizar cálculos, manipular el DOM (Document Object Model) y comunicarse con servidores si es necesario.
+### `app.js`
+- Controla la lógica principal de la aplicación.
+- Importa funciones desde el módulo `viajes.js` para registrar destinos, calcular costos y mostrar el itinerario.
+- Maneja eventos como el registro de nuevos viajes mediante el botón "Registrar".
 
-### Ejemplo de un archivo JavaScript
-```javascript
-// script.js
-document.getElementById('miBoton').addEventListener('click', () => {
-    alert('¡Botón clickeado!');
-});
-```
+### `viajes.js`
+- Módulo que contiene las funciones relacionadas con la gestión de viajes:
+  - `registrarDestino`: Agrega un nuevo destino al sistema.
+  - `calcularCosto`: Calcula el costo del viaje según el destino y el transporte.
+  - `mostrarItinerario`: Muestra todos los viajes registrados en el itinerario.
+  - `agregarViajeHTML`: Actualiza el HTML para reflejar los viajes registrados.
 
-## Relación entre HTML y JavaScript
-El archivo HTML proporciona la estructura básica, mientras que el archivo JavaScript añade interactividad y dinamismo. Ambos trabajan juntos para crear una experiencia de usuario completa y funcional.
+### `styles.css`
+- Archivo de estilos para mejorar la apariencia de la aplicación.
+
+## Funcionalidades principales
+1. **Registrar destinos**: Permite agregar un destino, fecha y transporte al itinerario.
+2. **Calcular costos**: Calcula automáticamente el costo del viaje según el destino y el transporte seleccionado.
+3. **Mostrar itinerario**: Visualiza todos los viajes registrados en un formato claro y organizado.
+
+## Cómo usar
+1. Selecciona un destino, método de transporte y fecha en el formulario.
+2. Haz clic en el botón "Registrar" para agregar el viaje al itinerario.
+3. Visualiza los viajes registrados en la sección "Itinerario de Viajes".
 
 ## Datos del Autor
 - **Nombre**: Sergio Sebastian Velasco Torres
