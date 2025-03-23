@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRO DE VIAJES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes - Registro de Viajes</h1>
+    </header>
+    <main>
+        <section id="registro">
+            <h2>Registrar un nuevo viaje</h2>
+            <form>
+                <label>Selecciona tu destino:
+                    <select id="destino">
+                        <option value="Paris">Paris</option>
+                        <option value="Londres">Londres</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </label>
+                <label>Selecciona tu método de transporte:
+                    <select id="transporte">
+                        <option value="Tren">Tren</option>
+                        <option value="Avión">Avión</option>
+                    </select>
+                </label>
+                <label>Selecciona la fecha:
+                    <input type="date" id="fecha">
+                </label>
+                <button id="btnRegistrar" type="button">Registrar</button>
+            </form>
+        </section>
+        <section id="viajes">
+            <h2>Itinerario de Viajes</h2>
+            <!-- Los viajes registrados se mostrarán aquí -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Agencia de Viajes</p>
+    </footer>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
